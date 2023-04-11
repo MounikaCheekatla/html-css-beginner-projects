@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitflex - a gym & fitness centre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Raleway:ital,wght@1,100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /* css reset  */
+    body {
+        font-family: 'Kanit', sans-serif;
+        color:white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+    }
+    .left {
+        display:inline-block;
+        position: absolute;
+        left: 60px;
+        top: 40px;
+        line-height: 30px;
+    }
+    .left img {
+        width: 150px;
+    }
+    .left div {
+        text-align: center;
+        font-size: 30px;
+    }
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 30px auto;
+    }
+    .right{
+        display:inline-block;
+        position: absolute;
+        right: 34px;
+        top: 50px;
+    }
+    .navbar {
+        display:inline-block;
+    }
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover,.navbar li a:active  {
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn {
+        font-family: 'Kanit', sans-serif;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(66, 66, 66);
+    }
+    .container {
+        border: 2px solid white;
+        color: white;
+        margin: 150px 30px;
+        padding: 40px;
+        width: 50%;
+        border-radius: 20px;
+    }
+    .form-group input {
+        text-align: center;
+        display:block;
+        width: 400px;
+        padding:9px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 6px auto;
+        font-size: 15px;
+        font-family: 'Kanit', sans-serif;
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container button {
+        display: block;
+        width: 12%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="img/gym.jpg" alt="">
+            <div>Fitflex</div>            
+        </div>
+        <!-- mid box for navigation  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym & fitness center in Hyderabad!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
